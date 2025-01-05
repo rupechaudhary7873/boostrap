@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .navbar .nav-item .nav-link {
+  position: relative;
+  padding: 0;
+  padding-bottom: 10px;
+}
+header .navbar .nav-item .nav-link::before {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+header .navbar .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+
+.banner-content {
+  padding-inline: 8%;
+}
+
+.content-banner .nav .nav-link {
+  background-color: transparent;
+  border-right: 1px solid gray;
+  border-radius: 0;
+  color: black;
+  padding-right: 100px;
+}
+.content-banner .nav .nav-link.active {
+  border-right: 3px solid blue;
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

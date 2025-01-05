@@ -1,0 +1,18 @@
+.banner-content{
+    padding-inline: 8%;
+}
+.content-banner{
+    .nav{
+        .nav-link{
+            background-color: transparent;
+            border-right: 1px solid gray;
+            border-radius: 0;
+            color: black;
+            padding-right: 100px;
+            &.active{
+                border-right: 3px solid blue;
+                color: blue;
+            }
+        }
+    }
+}
