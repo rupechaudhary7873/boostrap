@@ -37,4 +37,71 @@ header .navbar .nav-item .nav-link:hover::before {
 .content-banner .nav .nav-link.active {
   border-right: 3px solid blue;
   color: blue;
+}
+.content-banner .details {
+  position: relative;
+}
+.content-banner .details h1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  max-width: 100px;
+  padding-bottom: 30px;
+  margin-inline: 45% auto;
+  border-bottom: 2px solid gray;
+}
+.content-banner .details h1::before {
+  content: "";
+  display: block;
+  max-width: 100px;
+  padding-bottom: 30px;
+  position: absolute;
+  top: 34%;
+  width: 30px;
+  margin-inline: 48% auto;
+  border-bottom: 4px solid blue;
+}
+
+.board .row_bar .box {
+  position: relative;
+}
+.board .row_bar .box i {
+  position: absolute;
+  top: -20%;
+  left: 40%;
+  font-size: 30px;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.grid_section .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.grid_section .row .grid {
+  border: 1px solid rgb(209, 182, 182);
+  padding: 60px 20px;
+  transition: 0.5s;
+}
+.grid_section .row .grid i {
+  font-size: 25px;
+  color: white;
+  border-radius: 10%;
+  box-shadow: -10px -10px rgb(194, 194, 241);
+  background-color: #0D6EFD;
+}
+.grid_section .row .grid:hover {
+  background-color: #0D6EFD;
+}
+.grid_section .row .grid:hover i {
+  background-color: white;
+  color: #0D6EFD;
+}
+.grid_section .row .grid:hover h2 {
+  color: white;
+}
+.grid_section .row .grid:hover p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
